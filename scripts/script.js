@@ -1,9 +1,12 @@
-class UIComponents {
-    constructor(...elements)
 
-}
+// *************.       пока на надо    ************************
 
-// *************.       пока на надо
+
+// class UIComponents {
+//     constructor(...elements)
+// }
+
+
 // class ModalWindow extends UIComponents { }
 // static make(){
 //     const container = document.createElement("div");
@@ -21,10 +24,13 @@ class UIComponents {
 // }
 // const modal = new ModalWindow("div","div", {},["closeIcon", "esc", "onblur"],)
 
+//**************************************************************************** */
+
 const openModalBtn = document.querySelector(".openModalBtn");
 const modal = document.querySelector(".modal");
 const modalBody = document.querySelector(".modalBody");
-
+const closeModal = document.querySelector(".closeModal");
+const okModal = document.querySelector(".okModal");
 openModalBtn.addEventListener("click", () => {
     modal.classList.remove("modalHidden");
 })
@@ -37,3 +43,5 @@ modalBody.addEventListener("click", (event) => {
     event.stopPropagation();
 })
 
+closeModal.addEventListener("click", () => { modal.classList.add("modalHidden"); })
+okModal.addEventListener("click", () => { modal.classList.add("modalHidden"); })

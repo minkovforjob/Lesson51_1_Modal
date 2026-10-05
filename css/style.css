@@ -21,6 +21,7 @@
 }
 
 .modalBody {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -33,4 +34,15 @@
 
 .modalHidden {
     display: none;
+}
+
+.closeModal {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
