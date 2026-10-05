@@ -43,5 +43,14 @@ modalBody.addEventListener("click", (event) => {
     event.stopPropagation();
 })
 
-closeModal.addEventListener("click", () => { modal.classList.add("modalHidden"); })
-okModal.addEventListener("click", () => { modal.classList.add("modalHidden"); })
+closeModal.addEventListener("click", () => { modal.classList.add("modalHidden"); });
+okModal.addEventListener("click", () => { modal.classList.add("modalHidden"); });
+
+
+
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        modal.classList.add("modalHidden");
+    }
+});
